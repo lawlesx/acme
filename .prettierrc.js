@@ -5,7 +5,7 @@ const options = {
   printWidth: 120,
   code: 120,
   tabWidth: 2,
-  endOfLine: 'lf',
+  endOfLine: 'auto',
   arrowParens: 'always',
   jsxSingleQuote: true,
   plugins: ['prettier-plugin-tailwindcss'],
