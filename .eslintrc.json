@@ -1,12 +1,19 @@
 {
   "extends": [
-    "next/core-web-vitals", 
+    "next/core-web-vitals",
     "eslint:recommended",
     "plugin:@next/next/recommended",
     "plugin:prettier/recommended"
   ],
   "plugins": ["prettier"],
   "rules": {
-    "prettier/prettier": ["warn"]
+    "prettier/prettier": [
+      "warn",
+      {
+        "endOfLine": "auto",
+        "semi": false
+      },
+      { "usePrettierrc": true }
+    ]
   }
 }
