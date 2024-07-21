@@ -1,7 +1,12 @@
+import Hero from '@/components/Hero'
+import Navbar from '@/components/Navbar'
+
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <h1 className='text-4xl'>The quick brown fox</h1>
+    <main className='relative flex min-h-screen flex-col items-center bg-black py-4'>
+      <Navbar />
+      <Hero />
+      {/* <div className='absolute w-40 h-screen bg-pink-400 left-[50%]'></div> */}
     </main>
   )
 }

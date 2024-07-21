@@ -6,17 +6,17 @@ import './globals.css'
 const pangramFont = localFont({
   src: [
     {
-      path: './fonts/PPPangramSans-Bold.woff',
+      path: '../fonts/PPPangramSans-Bold.woff',
       weight: '700',
       style: 'normal',
     },
     {
-      path: './fonts/PPPangramSans-Light.woff',
+      path: '../fonts/PPPangramSans-Light.woff',
       weight: '300',
       style: 'normal',
     },
     {
-      path: './fonts/PPPangramSans-Medium.woff',
+      path: '../fonts/PPPangramSans-Medium.woff',
       weight: '400',
       style: 'normal',
     },
