@@ -8,7 +8,7 @@ import ShineBorder from './magicui/shine-border'
 const Navbar = () => {
   return (
     <ShineBorder
-      className='sticky top-5 z-[1] flex w-full items-center overflow-hidden rounded-lg border border-black bg-transparent px-10 backdrop-blur-3xl md:w-1/2 lg:w-3/5'
+      className='sticky top-5 z-[1] flex w-full items-center overflow-hidden rounded-lg border border-rose-100 bg-transparent px-10 backdrop-blur-xl md:w-1/2 lg:w-3/5'
       color={['#E9190F', '#FF0F80', '#FE4E00', '#E67F0D', '#FFAE03']}
     >
       <nav className='z-[1] flex w-full items-center justify-between'>
@@ -16,7 +16,7 @@ const Navbar = () => {
           <Logo className='h-12 w-12' />
           <h1 className='pt-1 text-2xl font-medium text-white'>Acme</h1>
         </div>
-        <div className='md:flexgap-4 hidden'>
+        <div className='hidden gap-4 md:flex'>
           {navItems.map((item, i) => (
             <Link key={i} href='#' className='group tracking-widest text-white transition-colors'>
               {item}

@@ -163,12 +163,27 @@ const config = {
             transform: 'translate(calc(100cqw - 100%), 0)',
           },
         },
+        gradient: {
+          to: {
+            backgroundPosition: 'var(--bg-size) 0',
+          },
+        },
+        orbit: {
+          '0%': {
+            transform: 'rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)',
+          },
+          '100%': {
+            transform: 'rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'spin-around': 'spin-around calc(var(--speed) * 2) infinite linear',
         slide: 'slide var(--speed) ease-in-out infinite alternate',
+        gradient: 'gradient 8s linear infinite',
+        orbit: 'orbit calc(var(--duration)*1s) linear infinite',
       },
     },
   },
