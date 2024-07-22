@@ -26,7 +26,7 @@ const Hero = () => {
             ))}
           </span>
         </h1>
-        <p className='mx-auto w-full text-center text-base text-[#D9D9D9] md:w-1/3'>
+        <p className='z-[1] mx-auto w-full text-center text-base text-[#D9D9D9] md:w-1/3'>
           Capture and organize ideas effortlessly with AI-powered assistance and secure protection. Fast, ergonomic, and
           reliable.
         </p>

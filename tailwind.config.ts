@@ -176,6 +176,23 @@ const config = {
             transform: 'rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)',
           },
         },
+        marquee: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(calc(-100% - var(--gap)))' },
+        },
+        'marquee-vertical': {
+          from: { transform: 'translateY(0)' },
+          to: { transform: 'translateY(calc(-100% - var(--gap)))' },
+        },
+        'border-beam': {
+          '100%': {
+            'offset-distance': '100%',
+          },
+        },
+        grid: {
+          '0%': { transform: 'translateY(-50%)' },
+          '100%': { transform: 'translateY(0)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -184,6 +201,10 @@ const config = {
         slide: 'slide var(--speed) ease-in-out infinite alternate',
         gradient: 'gradient 8s linear infinite',
         orbit: 'orbit calc(var(--duration)*1s) linear infinite',
+        marquee: 'marquee var(--duration) linear infinite',
+        'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
+        'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear',
+        grid: 'grid 15s linear infinite',
       },
     },
   },
