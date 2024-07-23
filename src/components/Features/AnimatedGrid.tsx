@@ -3,7 +3,6 @@ import Marquee from '@/components/magicui/marquee'
 import { cn } from '@/lib/utils'
 import { CalendarIcon, FileTextIcon } from '@radix-ui/react-icons'
 import { BellIcon, Share2Icon } from 'lucide-react'
-import Image from 'next/image'
 import IntegrationBeam from '../PoweringTheBest/IntegrationBeam'
 import NotificationList from '../ProjectUpdates/NotificationList'
 
@@ -95,9 +94,18 @@ const features = [
     href: '#',
     cta: 'Learn more',
     background: (
-      <div className='absolute right-0 top-0 h-full w-full origin-top rounded-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_180%)] group-hover:scale-105'>
-        <Image src='/images/calender.png' fill className='object-cover' alt='' />
-        {/* <h1 className='text-4xl text-white'>Hi</h1> */}
+      <div className='absolute right-0 top-0 flex h-full w-full origin-top flex-col items-center rounded-md pt-10 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105'>
+        {[
+          ['1st', '2nd', '3rd', '4th'],
+          ['11th', '12th', '13th', '14th'],
+          ['22nd', '23rd', '24th', '25th'],
+        ].map((rows, i) => (
+          <div className='flex items-center justify-center gap-4 text-6xl text-white' key={i}>
+            {rows.map((day, j) => (
+              <span key={j}>{day}</span>
+            ))}
+          </div>
+        ))}
       </div>
     ),
   },
