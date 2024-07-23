@@ -39,7 +39,7 @@ const ResponsiveNav = () => {
         >
           <DotPattern className={cn('[mask-image:radial-gradient(400px_circle_at_center,white,transparent)]')} />
           <X className='ml-auto h-6 w-6 cursor-pointer' onClick={() => setIsOpen(false)} />
-          <div className='z-[1] my-10 flex w-full flex-col items-end gap-6'>
+          <div className='z-[1] mb-20 mt-10 flex w-full flex-col items-end gap-6'>
             {navItems.map((item, i) => (
               <Link key={i} href='#' className='text-2xl tracking-wider text-white'>
                 {item}
