@@ -71,6 +71,10 @@ const ResponsiveNav = () => {
             className='flex h-14 w-14 items-center justify-center rounded-full'
             borderRadius={100}
             borderSize={2}
+            neonColors={{
+              firstColor: '#FF0F80',
+              secondColor: '#FFAE03',
+            }}
           >
             <MenuIcon className='h-6 w-6 text-white' />
           </NeonGradientCard>
