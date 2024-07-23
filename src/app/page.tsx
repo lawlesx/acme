@@ -1,9 +1,11 @@
 import BuiltForYou from '@/components/BuiltForYou'
+import Features from '@/components/Features'
 import Hero from '@/components/Hero'
 import IntegrationSection from '@/components/IntegrationSection'
 
 import Navbar from '@/components/Navbar'
 import PoweringTheBest from '@/components/PoweringTheBest'
+import ProjectUpdates from '@/components/ProjectUpdates'
 
 export default function Home() {
   return (
@@ -13,7 +15,8 @@ export default function Home() {
       <BuiltForYou />
       <PoweringTheBest />
       <IntegrationSection />
-      {/* <div className='absolute w-40 h-screen bg-pink-400 left-[50%]'></div> */}
+      <ProjectUpdates />
+      <Features />
     </main>
   )
 }

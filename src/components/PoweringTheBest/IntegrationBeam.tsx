@@ -2,27 +2,8 @@
 import { AnimatedBeam } from '@/components/magicui/animated-beam'
 import { cn } from '@/lib/utils'
 import React, { forwardRef, useRef } from 'react'
-import { GoogleDocsIcon, GoogleDriveIcon, NotionIcon, OpenAiIcon, WhatsAppIcon } from './icons'
-import Logo from './Logo'
-import RetroGrid from './magicui/retro-grid'
-
-const PoweringTheBest = () => {
-  return (
-    <section className='relative flex h-screen w-full flex-col items-center justify-center gap-0 lg:flex-row lg:gap-20'>
-      <div className='flex w-full flex-col gap-4 px-4 lg:w-[400px] lg:px-0'>
-        <h1 className='text-3xl font-bold text-white'>{`Powering the world's best product teams.`}</h1>
-        <p className='text-base font-light tracking-wider text-gray-300'>
-          Install one of our verified integrations, or build your own with our API. Because a great knowledge management
-          system should work with everything you use on a daily basis.
-        </p>
-      </div>
-      <IntegrationAnimation />
-      <RetroGrid />
-    </section>
-  )
-}
-
-export default PoweringTheBest
+import { GoogleDocsIcon, GoogleDriveIcon, NotionIcon, OpenAiIcon, WhatsAppIcon } from '../icons'
+import Logo from '../Logo'
 
 const Circle = forwardRef<HTMLDivElement, { className?: string; children?: React.ReactNode }>(
   ({ className, children }, ref) => {
@@ -42,7 +23,7 @@ const Circle = forwardRef<HTMLDivElement, { className?: string; children?: React
 
 Circle.displayName = 'Circle'
 
-const IntegrationAnimation = () => {
+const IntegrationBeam = ({ className }: { className?: string }) => {
   const containerRef = useRef<HTMLDivElement>(null)
   const div1Ref = useRef<HTMLDivElement>(null)
   const div2Ref = useRef<HTMLDivElement>(null)
@@ -53,7 +34,10 @@ const IntegrationAnimation = () => {
 
   return (
     <div
-      className='relative flex h-[400px] w-4/5 items-center justify-center overflow-hidden lg:size-[500px]'
+      className={cn(
+        'relative flex h-[400px] w-4/5 items-center justify-center overflow-hidden lg:size-[500px]',
+        className
+      )}
       ref={containerRef}
     >
       <div className='flex size-full max-w-lg flex-row items-stretch justify-between gap-10'>
@@ -99,3 +83,5 @@ const icons = {
   whatsapp: <WhatsAppIcon />,
   googleDocs: <GoogleDocsIcon className='size-5' />,
 }
+
+export default IntegrationBeam
