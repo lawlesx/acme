@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils'
 import { AnimatePresence, motion } from 'framer-motion'
 import { MenuIcon, X } from 'lucide-react'
 import Link from 'next/link'
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import DotPattern from './magicui/dot-pattern'
 import { NeonGradientCard } from './magicui/neon-gradient-card'
 import ShimmerButton from './magicui/shimmer-button'
@@ -17,6 +17,17 @@ const ResponsiveNav = () => {
   useOutsideClick(ref, () => {
     setIsOpen(false)
   })
+
+  // Prevent scrolling when the nav is open
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      if (isOpen) {
+        document.body.style.overflow = 'hidden'
+      } else {
+        document.body.style.overflow = 'auto'
+      }
+    }
+  }, [isOpen])
 
   return (
     <AnimatePresence mode='wait'>
