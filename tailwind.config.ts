@@ -78,13 +78,6 @@ const config = {
           800: '#ff9fcc',
           900: '#ffcfe5',
         },
-        theme: {
-          1: '#76A9FC',
-          2: '#7E7EF8',
-          3: '#8653F5',
-          4: '#E55CC9',
-          5: '#FF88A9',
-        },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
@@ -201,6 +194,10 @@ const config = {
             transform: 'translate(-50%, -50%) scale(0.9)',
           },
         },
+        'background-position-spin': {
+          '0%': { backgroundPosition: 'top center' },
+          '100%': { backgroundPosition: 'bottom center' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -214,6 +211,7 @@ const config = {
         'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear',
         grid: 'grid 15s linear infinite',
         ripple: 'ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite',
+        backgroundPositionSpin: 'background-position-spin 3000ms infinite alternate',
       },
     },
   },

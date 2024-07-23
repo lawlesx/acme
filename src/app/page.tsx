@@ -6,6 +6,7 @@ import IntegrationSection from '@/components/IntegrationSection'
 import Navbar from '@/components/Navbar'
 import PoweringTheBest from '@/components/PoweringTheBest'
 import ProjectUpdates from '@/components/ProjectUpdates'
+import ResponsiveNav from '@/components/ResponsiveNav'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <IntegrationSection />
       <ProjectUpdates />
       <Features />
+      <ResponsiveNav />
     </main>
   )
 }

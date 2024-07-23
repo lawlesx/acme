@@ -1,5 +1,3 @@
-'use client'
-
 import Link from 'next/link'
 import Logo from './Logo'
 import ShimmerButton from './magicui/shimmer-button'
@@ -34,4 +32,4 @@ const Navbar = () => {
 
 export default Navbar
 
-const navItems = ['Changelog', 'Features', 'Pricing', 'Contact']
+export const navItems = ['Changelog', 'Features', 'Pricing', 'Contact']

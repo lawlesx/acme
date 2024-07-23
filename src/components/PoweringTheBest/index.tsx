@@ -3,7 +3,7 @@ import IntegrationBeam from './IntegrationBeam'
 
 const PoweringTheBest = () => {
   return (
-    <section className='relative flex h-screen w-full flex-col items-center justify-center gap-0 lg:flex-row lg:gap-20'>
+    <section className='relative z-0 flex h-screen w-full flex-col items-center justify-center gap-0 lg:flex-row lg:gap-20'>
       <div className='flex w-full flex-col gap-4 px-4 lg:w-[400px] lg:px-0'>
         <h1 className='text-3xl font-bold text-white'>{`Powering the world's best product teams.`}</h1>
         <p className='text-base font-light tracking-wider text-gray-300'>

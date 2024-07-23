@@ -5,7 +5,7 @@ import SparklesText from './magicui/sparkles-text'
 
 const Hero = () => {
   return (
-    <section className='relative min-h-screen w-full'>
+    <section className='relative z-0 min-h-screen w-full'>
       <div className='flex h-[80vh] flex-col items-center justify-center gap-10'>
         <Particles
           className='absolute inset-0'
