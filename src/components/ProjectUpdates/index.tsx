@@ -10,7 +10,7 @@ const ProjectUpdates = () => {
           Communicate progress and project health with built-in project updates.
         </p>
       </div>
-      <div className='relative flex size-full items-center justify-center lg:size-[700px]'>
+      <div className='relative flex size-[700px] items-center justify-center'>
         <Ripple />
         <NotificationList />
       </div>

@@ -70,7 +70,7 @@ const features = [
     cta: 'Learn more',
     className: 'col-span-3 lg:col-span-2',
     background: (
-      <NotificationList className='absolute right-2 top-4 h-[300px] w-[600px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105' />
+      <NotificationList className='absolute -right-28 top-4 h-[300px] w-[600px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105 sm:right-2' />
     ),
   },
   {
@@ -81,7 +81,7 @@ const features = [
     cta: 'Learn more',
     className: 'col-span-3 lg:col-span-2',
     background: (
-      <div className='absolute right-2 top-4 h-[300px] w-[600px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105'>
+      <div className='absolute -right-20 top-4 h-[300px] w-[600px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105 sm:right-2'>
         <IntegrationBeam className='lg:h-[300px] lg:w-[600px]' />
       </div>
     ),
@@ -100,7 +100,7 @@ const features = [
           ['11th', '12th', '13th', '14th'],
           ['22nd', '23rd', '24th', '25th'],
         ].map((rows, i) => (
-          <div className='flex items-center justify-center gap-4 text-6xl text-white' key={i}>
+          <div className='flex cursor-default items-center justify-center gap-4 text-6xl text-white' key={i}>
             {rows.map((day, j) => (
               <span key={j}>{day}</span>
             ))}
