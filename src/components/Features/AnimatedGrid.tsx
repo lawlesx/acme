@@ -94,7 +94,7 @@ const features = [
     href: '#',
     cta: 'Learn more',
     background: (
-      <div className='absolute right-0 top-0 flex h-full w-full origin-top flex-col items-center rounded-md pt-10 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105'>
+      <div className='absolute right-0 top-0 flex h-full w-full origin-top flex-col items-center gap-1 rounded-md pt-8 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_150%)] group-hover:scale-105'>
         {[
           ['1st', '2nd', '3rd', '4th'],
           ['11th', '12th', '13th', '14th'],
@@ -113,7 +113,7 @@ const features = [
 
 const AnimatedGrid = () => {
   return (
-    <BentoGrid className='w-1/2'>
+    <BentoGrid className='w-full px-4 lg:w-1/2 lg:px-0'>
       {features.map((feature, idx) => (
         <BentoCard key={idx} {...feature} />
       ))}
