@@ -8,8 +8,8 @@ import RetroGrid from './magicui/retro-grid'
 
 const PoweringTheBest = () => {
   return (
-    <section className='relative flex h-screen w-full items-center justify-center gap-20'>
-      <div className='flex w-[400px] flex-col gap-4'>
+    <section className='relative flex h-screen w-full flex-col items-center justify-center gap-0 lg:flex-row lg:gap-20'>
+      <div className='flex w-full flex-col gap-4 px-4 lg:w-[400px] lg:px-0'>
         <h1 className='text-3xl font-bold text-white'>{`Powering the world's best product teams.`}</h1>
         <p className='text-base font-light tracking-wider text-gray-300'>
           Install one of our verified integrations, or build your own with our API. Because a great knowledge management
@@ -52,7 +52,10 @@ const IntegrationAnimation = () => {
   const div7Ref = useRef<HTMLDivElement>(null)
 
   return (
-    <div className='relative flex h-[500px] w-[500px] items-center justify-center overflow-hidden' ref={containerRef}>
+    <div
+      className='relative flex h-[400px] w-4/5 items-center justify-center overflow-hidden lg:size-[500px]'
+      ref={containerRef}
+    >
       <div className='flex size-full max-w-lg flex-row items-stretch justify-between gap-10'>
         <div className='flex flex-col justify-center'>
           <Circle ref={div7Ref}>
