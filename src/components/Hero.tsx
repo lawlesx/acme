@@ -42,7 +42,7 @@ const Hero = () => {
           />
         </AnimatedGradientText>
         <WordPullUp
-          className='w-full px-4 text-center text-xl font-light tracking-[0.04em] text-white md:text-7xl md:leading-[5rem] lg:w-2/4 lg:px-0'
+          className='w-full px-4 text-center text-xl font-medium tracking-[0.04em] text-white md:text-3xl md:leading-[2rem] lg:w-2/4 lg:px-0'
           words='Change the way you take NOTES.'
         />
       </div>

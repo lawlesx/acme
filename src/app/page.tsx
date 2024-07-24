@@ -9,6 +9,7 @@ import Navbar from '@/components/Navbar'
 import PoweringTheBest from '@/components/PoweringTheBest'
 import ProjectUpdates from '@/components/ProjectUpdates'
 import ResponsiveNav from '@/components/ResponsiveNav'
+import TrustedBy from '@/components/TrustedBy'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <IntegrationSection />
       <ProjectUpdates />
       <Features />
+      <TrustedBy />
       <Footer />
       <ResponsiveNav />
     </main>
