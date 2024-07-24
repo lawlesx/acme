@@ -2,6 +2,7 @@ import { ChevronRight } from 'lucide-react'
 import AnimatedGradientText from './magicui/animated-gradient-text'
 import Particles from './magicui/particles'
 import SparklesText from './magicui/sparkles-text'
+import WordPullUp from './magicui/word-pull-up'
 
 const Hero = () => {
   return (
@@ -40,6 +41,10 @@ const Hero = () => {
             color='#FF0F80'
           />
         </AnimatedGradientText>
+        <WordPullUp
+          className='w-full px-4 text-center text-xl font-light tracking-[0.04em] text-white md:text-7xl md:leading-[5rem] lg:w-2/4 lg:px-0'
+          words='Change the way you take NOTES.'
+        />
       </div>
     </section>
   )

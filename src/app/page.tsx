@@ -1,3 +1,4 @@
+import About from '@/components/About'
 import BuiltForYou from '@/components/BuiltForYou'
 import Features from '@/components/Features'
 import Footer from '@/components/Footer'
@@ -14,6 +15,7 @@ export default function Home() {
     <main className='relative flex min-h-screen flex-col items-center bg-black'>
       <Navbar />
       <Hero />
+      <About />
       <BuiltForYou />
       <PoweringTheBest />
       <IntegrationSection />

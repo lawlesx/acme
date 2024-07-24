@@ -9,7 +9,7 @@ const BuiltForYou = () => {
         <h2 className='text-center text-4xl font-bold text-white'>Built for professionals like you.</h2>
         <p className='text-center text-lg text-gray-400'>Used by seriously productive people.</p>
       </div>
-      <MarqueeDemo />
+      <TraversingUsers />
     </section>
   )
 }
@@ -32,7 +32,7 @@ const ReviewCard = ({ img, name, username, body }: { img: string; name: string; 
   )
 }
 
-export function MarqueeDemo() {
+const TraversingUsers = () => {
   return (
     <div className='relative flex h-[400px] w-full flex-col items-center justify-center overflow-hidden'>
       <Marquee pauseOnHover className='[--duration:20s]'>
@@ -54,37 +54,37 @@ const reviews = [
     name: 'Jack',
     username: '@jack',
     body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: 'https://avatar.vercel.sh/jack',
+    img: 'https://avatars.githubusercontent.com/u/16860528',
   },
   {
     name: 'Alex',
     username: '@alex',
     body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: 'https://avatar.vercel.sh/Alex',
+    img: 'https://avatars.githubusercontent.com/u/20110627',
   },
   {
     name: 'John',
     username: '@john',
     body: "I'm at a loss for words. This is amazing. I love it.",
-    img: 'https://avatar.vercel.sh/john',
+    img: 'https://avatars.githubusercontent.com/u/106103625',
   },
   {
     name: 'Bhavana',
     username: '@bhavana',
     body: "I'm speechless.",
-    img: 'https://avatar.vercel.sh/Bhavana',
+    img: 'https://avatars.githubusercontent.com/u/59228569',
   },
   {
     name: 'Katie',
     username: '@katies',
     body: 'I enjoy the product. One-place tool for notes.',
-    img: 'https://avatar.vercel.sh/katie',
+    img: 'https://avatars.githubusercontent.com/u/39700883?v=4',
   },
   {
     name: 'Peter',
     username: '@peter',
     body: "Fast and reliable. I'm very happy with the product.",
-    img: 'https://avatar.vercel.sh/peter',
+    img: 'https://avatars.githubusercontent.com/u/69650754?v=4',
   },
 ]
 
