@@ -3,21 +3,36 @@ import localFont from 'next/font/local'
 import { ReactNode } from 'react'
 import './globals.css'
 
-const pangramFont = localFont({
+const gutonFont = localFont({
   src: [
     {
-      path: '../fonts/PPPangramSans-Bold.woff',
+      path: '../fonts/Guton-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/Guton-Medium.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/Guton-SemiBold.woff2',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/Guton-Bold.woff2',
       weight: '700',
       style: 'normal',
     },
     {
-      path: '../fonts/PPPangramSans-Light.woff',
-      weight: '300',
+      path: '../fonts/Guton-ExtraBold.woff2',
+      weight: '800',
       style: 'normal',
     },
     {
-      path: '../fonts/PPPangramSans-Medium.woff',
-      weight: '400',
+      path: '../fonts/Guton-Black.woff2',
+      weight: '900',
       style: 'normal',
     },
   ],
@@ -35,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={pangramFont.className}>{children}</body>
+      <body className={gutonFont.className}>{children}</body>
     </html>
   )
 }

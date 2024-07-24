@@ -5,9 +5,9 @@ import Meteors from './magicui/meteors'
 
 const Footer = () => {
   return (
-    <footer className='relative mt-20 h-full w-full overflow-hidden lg:h-[50vh]'>
+    <footer className='relative mt-20 h-full w-full overflow-hidden lg:min-h-[50vh]'>
       <Meteors number={30} />
-      <div className='mt-20 flex flex-col gap-20 border-t border-white/15 px-4 py-10 lg:mx-auto lg:w-3/5 lg:p-10'>
+      <div className='flex flex-col gap-20 border-t border-white/15 px-4 py-10 lg:mx-auto lg:w-3/5 lg:p-10'>
         <div className='flex w-full flex-col items-start justify-between lg:flex-row'>
           <div className='flex flex-col'>
             <div className='flex items-center gap-3'>
