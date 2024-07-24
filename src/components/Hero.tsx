@@ -27,10 +27,17 @@ const Hero = () => {
             ))}
           </span>
         </h1>
-        <p className='z-[1] mx-auto w-full text-center text-base text-[#D9D9D9] md:w-1/3'>
-          Capture and organize ideas effortlessly with AI-powered assistance and secure protection. Fast, ergonomic, and
-          reliable.
-        </p>
+        <div className='z-[1] mx-auto flex w-full flex-col items-center justify-center gap-6 md:flex-row md:gap-10'>
+          <WordPullUp
+            className='w-4/5 px-4 text-center text-xl font-medium tracking-[0.04em] text-white md:w-[25rem] md:text-3xl md:leading-[2rem]'
+            words='Change the way you take NOTES.'
+          />
+          <div className='hidden h-full w-[2px] bg-white/80 md:block' />
+          <p className='w-4/5 text-center text-base text-[#D9D9D9] md:w-[25rem]'>
+            Capture and organize ideas effortlessly with AI-powered assistance and secure protection. Fast, ergonomic,
+            and reliable.
+          </p>
+        </div>
         <AnimatedGradientText className='cursor-pointer rounded-full bg-transparent py-2 backdrop-blur-sm'>
           🎉{' '}
           <h2 className='animate-gradient bg-gradient-to-r from-chili_red via-rose to-aerospace_orange bg-[length:var(--bg-size)_100%] bg-clip-text pl-1 font-bold text-transparent'>
@@ -41,10 +48,6 @@ const Hero = () => {
             color='#FF0F80'
           />
         </AnimatedGradientText>
-        <WordPullUp
-          className='w-full px-4 text-center text-xl font-medium tracking-[0.04em] text-white md:text-3xl md:leading-[2rem] lg:w-2/4 lg:px-0'
-          words='Change the way you take NOTES.'
-        />
       </div>
     </section>
   )
