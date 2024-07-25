@@ -54,7 +54,7 @@ const Hero = () => {
         <AnimatedGradientText className='z-[2] cursor-pointer rounded-full bg-transparent py-2 backdrop-blur-sm'>
           🎉{' '}
           <h2 className='animate-gradient bg-gradient-to-r from-chili_red via-rose to-aerospace_orange bg-[length:var(--bg-size)_100%] bg-clip-text pl-1 font-bold text-transparent'>
-            {`Let's begin`}
+            Request a demo
           </h2>
           <ChevronRight
             className='ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5'
