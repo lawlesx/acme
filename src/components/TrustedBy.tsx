@@ -27,7 +27,9 @@ const TrustedBy = () => {
         ]}
         className={cn('[mask-image:linear-gradient(to_bottom,transparent,white,transparent)]')}
       />
-      <h1 className='text-center text-3xl font-semibold text-white md:text-left'>Trusted by thousands of teams.</h1>
+      <h1 className='px-4 text-center text-3xl font-semibold text-white md:px-0 md:text-left'>
+        Trusted by thousands of teams.
+      </h1>
       <div className='grid grid-cols-2 gap-4 md:grid-cols-3'>
         {[
           '/images/vercel.svg',

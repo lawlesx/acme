@@ -17,12 +17,12 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      <BuiltForYou />
+      <TrustedBy />
       <PoweringTheBest />
       <IntegrationSection />
       <ProjectUpdates />
       <Features />
-      <TrustedBy />
+      <BuiltForYou />
       <Footer />
       <ResponsiveNav />
     </main>
