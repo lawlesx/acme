@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## basic overview
 
-## Getting Started
+A SaaS platform to take notes. Capture and organize ideas effortlessly with AI-powered assistance and secure protection. Fast, ergonomic, and reliable. It is not only a place to take notes but plan your next idea and collaborate with others.
 
-First, run the development server:
+To Run:
 
 ```bash
-npm run dev
-# or
+yarn
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Framework and packages
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js](https://nextjs.org/) - The [React](https://react.dev/) Framework for the Web
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Tailwind](https://tailwindcss.com/) - For CSS Styling
+- [Framer-Motion](https://www.framer.com/motion/) - For Animations
+- [Lucide](https://lucide.dev/) - Provided Icons
+- [Prettier](https://prettier.io/) - Code Formatting
+- [Magic-UI](https://magicui.design/) - Animated Components
+  - [clsx](https://github.com/lukeed/clsx) - For constructing className strings conditionally
+  - [Tailwind-merge](https://github.com/dcastil/tailwind-merge) - Efficiently merge Tailwind CSS classes in JS without style conflicts
+  - [Tailwindcss-animate](https://github.com/jamiebuilds/tailwindcss-animate) - Tailwind CSS plugin for creating beautiful animations
+  - [Radix-UI](https://www.radix-ui.com/) - Used Internally by Magic UI (Dependency)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Page Performance
 
-## Deploy on Vercel
+The Performance is tested on [PageSpeed-insights](https://pagespeed.web.dev/) to achieve the following result.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Page Optimization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The page performs well on desktops, but for mobile devices, some images should be replaced with smaller versions. Currently, desktop images are being resized for mobile use.
