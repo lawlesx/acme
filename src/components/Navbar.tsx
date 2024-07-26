@@ -24,14 +24,18 @@ const Navbar = () => {
           </div>
           <div className='hidden gap-4 md:flex'>
             {navItems.map((item, i) => (
-              <Link key={i} href='#' className='group tracking-widest text-white transition-colors'>
+              <Link key={i} href='#' className='group text-sm tracking-widest text-white transition-colors'>
                 {item}
                 <div className='h-[2px] w-0 rounded-full bg-aerospace_yellow transition-all group-hover:w-3/4' />
               </Link>
             ))}
           </div>
-          <ShimmerButton shimmerColor='#FF0F80' shimmerSize='0.1em' className='py-2'>
-            Get Started
+          <ShimmerButton
+            shimmerColor='#FF0F80'
+            shimmerSize='0.1em'
+            className='py-2 text-sm font-semibold tracking-wider text-white'
+          >
+            Login
           </ShimmerButton>
         </nav>
       </ShineBorder>
