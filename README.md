@@ -2,7 +2,9 @@
 
 A SaaS platform to take notes. Capture and organize ideas effortlessly with AI-powered assistance and secure protection. Fast, ergonomic, and reliable. It is not only a place to take notes but plan your next idea and collaborate with others.
 
-To Run:
+Hosted on - [https://acme-note-ruddy.vercel.app/](https://acme-note-ruddy.vercel.app/)
+
+To Run Locally:
 
 ```bash
 yarn
@@ -29,6 +31,9 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 The Performance is tested on [PageSpeed-insights](https://pagespeed.web.dev/) to achieve the following result.
 
+![Screenshot 2024-07-26 115857](https://github.com/user-attachments/assets/37c02053-f28a-46d3-a9bf-3a79a8151f5b)
+
 ## Page Optimization
+
 
 The page performs well on desktops, but for mobile devices, some images should be replaced with smaller versions. Currently, desktop images are being resized for mobile use.
